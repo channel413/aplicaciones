@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/2.2.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get">
+    <div id="contenedor">
+    <section id="encabezado">
+            <img src="img/Yo.jpeg" alt=""><br>
+            <h2>Formulario de contacto</h2>
+    </section>
+    <section>
+        <aside id="unoizq"> 
+            <label for="nombre"> nombre completo</label> <br>
+            <input type="text">
+        </aside>
+        <aside id="unoder"> 
+            <label for="apellido"></label> <br>
+            <input type="text" placeholder="Apellidos">
+        </aside>
+    </section>
+    <section>
+        <aside id="dos">
+            <label for="direeccion">Direccion</label> <br>
+            <input type="text">
+        </aside>
+    </section>
+    <section>
+
+        <aside id="tresizq">
+            <label for="municipios"></label>
+            <select name="municipios" id="municipios">
+                <option value="municipio">Municipio</option>
+                <option value="texcoco">Texcoco</option>
+                <option value="ixtapaluca">Ixtapaluca</option>
+                <option value="chamlhuacan">Chimalhuacan</option>
+            </select>
+        </aside>
+
+        <aside id="trescen">
+                <label for="estados"></label>
+                <select name="estados" id="Estados">
+                    <option value="estados">Estados</option>
+                    <option value="edomex">Edo Mex</option>
+                    <option value="aguascalientes">Aguas Calientes</option>
+                    <option value="veracruz">Veracruz</option>
+                    <option value="nuevoleon">Nuevo Leon</option>
+                </select>
+        </aside>
+
+        <aside id="tresder">
+            <input type="text" placeholder="C.P.">
+        </aside>
+
+    </section>
+    <section>
+        <aside id="cuatroizq">
+            <label for="telefono"></label>
+            <input type="text" placeholder="Numero de Telefono">
+        </aside>
+        <aside id="cuatroder">
+            <label for="dechadenacimiento"></label>
+            <input type="date" placeholder="Fecha de nacimiento">
+        </aside>
+    </section>
+    <section>
+        <aside id="cinco">
+            <label for="terminos"></label> <br>
+            <input type="checkbox" id="so1" name="so1" value="condiciones">Acepto Terminos y Condiciones <br><br>
+            <textarea cols="40" rows="8" required readonly id="mensaje" name="mensaje">Comentarios Adicionales </textarea>
+        </aside>
+    </section>
+   </div>
+   </form>
+</body>
+</html>

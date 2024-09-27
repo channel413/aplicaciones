@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <!-- get para pruebas y post para produccion
+         si se quiere poner una imagen en el form se pone un elemento mas -->
+        <form method="get">
+            <p>
+                <label for="comentarios">comentario <br>
+                    <!-- textarea escribir (terminos y condiciones) 
+                     cols para definir el ancho
+                     rows para definir la altura
+                     readonly para que no se elimine el texto y sea solo lectura-->
+                    <textarea cols="40" rows="8" required readonly id="mensaje" name="mensaje">Terminos y Condiciones</textarea>
+                </label>
+            </p>
+            <p>
+                <label for="lenguaje">Lenguaje(s) Favoritos</label> <br>
+                <select name="lenguajes" id="lenguajes" required multiple="true">
+                    <option value="c++">C++</option>
+                    <option value="php">PHP</option>
+                    <option value="phyton">Python</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="java">Java</option>
+
+                </select>
+            </p>
+            <p>
+                <input type="submit" id="remitir" value="Remitir informacion">
+            </p>
+            <p>
+                <label for="imagen">Seleccione una imagen</label> <br>
+                <input type="file" id="imagen" name="imagen" required>
+            </p>
+            <p>
+                <!-- multiple="true" para mas de unelemento -->
+                <label for="imagenes">Seleccione una imagen</label> <br>
+                <input type="file" id="imagenes" name="imagenes" required multiple="true">
+            </p>
+            <p>
+                <!-- checkbox para cuadritos de confirmacion (con palomita) 
+                 los id deben ser diferentes-->
+                <label for="so">Sistema operativo</label> <br>
+                <input type="checkbox" id="so1" name="so1" value="windows">windows <br>
+                <input type="checkbox" id="so2" name="so2" value="macos">Mac OS <br>
+                <input type="checkbox" id="so3" name="so3" value="linux">Linux <br>
+            </p>
+            <p>
+                <!-- radio para circulitos de confirmacion solo se puede seleccionar uno 
+                 y no importa si el id son iguales-->
+                <label for="so">Sistema operativo</label> <br>
+                <input type="radio" id="so" name="so" value="windows">windows <br>
+                <input type="radio" id="so" name="so" value="macos">Mac OS <br>
+                <input type="radio" id="so" name="so" value="linux">Linux <br>
+            </p>
+            <p>
+                <button id="listar">Listar Datos</button> &nbsp;&nbsp;
+                <button id="guardar">Guardar Dato</button> &nbsp;&nbsp;
+                <button id="eliminardato">eliminar Dato</button> &nbsp;&nbsp;
+                <button id="editardato">Editar Dato</button> &nbsp;&nbsp;
+                
+                <!-- <button type="submit" id="remitir">Remitir Dato</button> 
+                 este sirve pcomo el siguiente pero solo puede haber uno-->
+            </p>
+            <p>
+                <!-- nuevos elementos de formulario -->
+                 <label for="date">Fecha</label> <br>
+                 <input type="date" id="fecha" name="fecha" required>
+            </p>
+            <p>
+                <label for="hora">Hora de registro</label> <br>
+                <input type="time">
+            </p>
+            <p>
+                <label for="edad">Seleccione su edad</label> <br>
+                <input type="number" id="edad" name="edad" min="0" step="5" max="150" required>
+            </p>
+            <p>
+                <label for="correo">Escriba su Correo Electronico</label> <br>
+                <input type="email" id="correo" name="correo" placeholder="escriba aqui" required>
+            </p>
+            <p>
+                <input type="submit" id="remitir" value="Remitir informacion">
+            </p>
+
+        </form>
+
+    </div>
+</body>
+</html>
